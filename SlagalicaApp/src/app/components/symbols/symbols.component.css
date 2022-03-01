@@ -1,0 +1,21 @@
+.symbols-container {
+
+    margin-top: 20vh;
+    justify-content: center;
+}
+
+.red-dot {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(201, 15, 15);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.yellow-dot {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(238, 223, 14);
+    border-radius: 50%;
+    display: inline-block;
+}
