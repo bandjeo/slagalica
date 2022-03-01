@@ -2,3 +2,8 @@
     margin-top: 20vh;
     justify-content: center;
 }
+
+button {
+  width: 5rem;
+  margin-right: 10px;
+}
