@@ -10,6 +10,8 @@ import { QuestionsComponent } from './components/questions/questions.component';
 import { ConnectionsComponent } from './components/connections/connections.component';
 import { AssociationsComponent } from './components/associations/associations.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CongratsComponent } from './components/congrats/congrats.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SymbolsComponent,
     QuestionsComponent,
     ConnectionsComponent,
-    AssociationsComponent
+    AssociationsComponent,
+    CongratsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

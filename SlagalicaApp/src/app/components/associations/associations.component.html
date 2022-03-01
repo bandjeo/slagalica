@@ -1,1 +1,73 @@
-<p>associations works!</p>
+<div class="row">
+    <div class="col">
+        <div class="assoc-container ">
+            <div class="row">
+                <button class="btn btn-primary col-2" (click)="onButtonClick('column1', 'a')" [disabled]="buttonMap.column1.a.disabled || !openNewField">{{buttonMap.column1.a.text}}</button>
+                <button class="btn btn-primary col-2 offset-8" (click)="onButtonClick('column2', 'a')" [disabled]="buttonMap.column2.a.disabled || !openNewField">{{buttonMap.column2.a.text}}</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col-2 offset-1" (click)="onButtonClick('column1', 'b')" [disabled]="buttonMap.column1.b.disabled || !openNewField">{{buttonMap.column1.b.text}}</button>
+                <button class="btn btn-primary col-2 offset-6" (click)="onButtonClick('column2', 'b')" [disabled]="buttonMap.column2.b.disabled || !openNewField">{{buttonMap.column2.b.text}}</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col-2 offset-2" (click)="onButtonClick('column1', 'c')" [disabled]="buttonMap.column1.c.disabled || !openNewField">{{buttonMap.column1.c.text}}</button>
+                <button class="btn btn-primary col-2 offset-4" (click)="onButtonClick('column2', 'c')" [disabled]="buttonMap.column2.c.disabled || !openNewField">{{buttonMap.column2.c.text}}</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col-2 offset-3" (click)="onButtonClick('column1', 'd')" [disabled]="buttonMap.column1.d.disabled || !openNewField">{{buttonMap.column1.d.text}}</button>
+                <button class="btn btn-primary col-2 offset-2" (click)="onButtonClick('column2', 'd')" [disabled]="buttonMap.column2.d.disabled || !openNewField">{{buttonMap.column2.d.text}}</button>                
+            </div>
+            <div class="row">
+                <div class="col-2 offset-4">
+                    <input type="text" class="form-control"  placeholder="" (change)="onSolutionInput('column1', $event)" name="solution1input" [(ngModel)]="buttonMap.column1.solution.text" [disabled]="openNewField || buttonMap.column1.solution.done || !solutionsEnabled.column1">
+                </div>
+                <div class="col-2">
+                    <input type="text" class="form-control"  placeholder="" (change)="onSolutionInput('column2', $event)"  name="solution2input" [(ngModel)]="buttonMap.column2.solution.text" [disabled]="openNewField || buttonMap.column2.solution.done || !solutionsEnabled.column2">
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-4 offset-4">
+                    <input type="text" class="form-control"  placeholder="" (change)="onFinalSolutionInput($event)" name="finalInput" [(ngModel)]="finalSolution.text" [disabled]="openNewField || finalSolution.done || !solutionsEnabled.final">
+                </div>
+                
+
+            </div>
+            <div class="row">
+                <div class="col-2 offset-4">
+                    <input type="text" class="form-control"  placeholder="" (change)="onSolutionInput('column3', $event)" name="solution3input" [(ngModel)]="buttonMap.column3.solution.text" [disabled]="openNewField || buttonMap.column3.solution.done || !solutionsEnabled.column3">
+                </div>
+                <div class="col-2">
+                    <input type="text" class="form-control"  placeholder="" (change)="onSolutionInput('column4', $event)"  name="solution4input" [(ngModel)]="buttonMap.column4.solution.text" [disabled]="openNewField || buttonMap.column4.solution.done || !solutionsEnabled.column4">
+                </div>
+                
+                
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col-2 offset-3" (click)="onButtonClick('column3', 'd')" [disabled]="buttonMap.column3.d.disabled || !openNewField">{{buttonMap.column3.d.text}}</button>
+                <button class="btn btn-primary col-2 offset-2" (click)="onButtonClick('column4', 'd')" [disabled]="buttonMap.column4.d.disabled || !openNewField">{{buttonMap.column4.d.text}}</button>    
+            </div>
+            <div class="row">
+
+                <button class="btn btn-primary col-2 offset-2" (click)="onButtonClick('column3', 'c')" [disabled]="buttonMap.column3.c.disabled || !openNewField">{{buttonMap.column3.c.text}}</button>
+                <button class="btn btn-primary col-2 offset-4" (click)="onButtonClick('column4', 'c')" [disabled]="buttonMap.column4.c.disabled || !openNewField">{{buttonMap.column4.c.text}}</button>
+                
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col-2 offset-1" (click)="onButtonClick('column3', 'b')" [disabled]="buttonMap.column3.b.disabled || !openNewField">{{buttonMap.column3.b.text}}</button>
+                <button class="btn btn-primary col-2 offset-6" (click)="onButtonClick('column4', 'b')" [disabled]="buttonMap.column4.b.disabled || !openNewField">{{buttonMap.column4.b.text}}</button>
+                
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col-2" (click)="onButtonClick('column3', 'a')" [disabled]="buttonMap.column3.a.disabled || !openNewField">{{buttonMap.column3.a.text}}</button>
+                <button class="btn btn-primary col-2 offset-8" (click)="onButtonClick('column4', 'a')" [disabled]="buttonMap.column4.a.disabled || !openNewField">{{buttonMap.column4.a.text}}</button>
+                
+            </div>
+            <div class="row" *ngIf="finalSolution.done">
+                <div class="col-2 offset-5">
+                    <button class="btn btn-primary" (click)="onNextClicked()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
