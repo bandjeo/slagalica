@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col">
+        <div class="numbres-container">
+            <div class="row">
+                <div class="col">
+                    {{numbers.goal}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    
+                    <div class="form-group col-12">
+                        <input type="text" class="form-control" id="numberInput" placeholder="" [value]="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button [disabled]="clicked[0]" class="btn btn-primary col-1 offset-2" (click)="onNumberClicked(0)">{{numbers.numbers[0]}}</button>
+                <button [disabled]="clicked[1]" class="btn btn-primary col-1" (click)="onNumberClicked(1)">{{numbers.numbers[1]}}</button>
+                <button [disabled]="clicked[2]" class="btn btn-primary col-1" (click)="onNumberClicked(2)">{{numbers.numbers[2]}}</button>
+                <button [disabled]="clicked[3]" class="btn btn-primary col-1" (click)="onNumberClicked(3)">{{numbers.numbers[3]}}</button>
+                <button [disabled]="clicked[4]" class="btn btn-primary col-1" (click)="onNumberClicked(4)">{{numbers.numbers[4]}}</button>
+                <button [disabled]="clicked[5]" class="btn btn-primary col-1" (click)="onNumberClicked(5)">{{numbers.numbers[5]}}</button>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+                <button class="btn btn-primary col-1"  *ngFor="let s of symbols" (click)="onSymbolClicked(s)">{{s}}</button>
+
+                <div class="col-2">
+                    <button class="btn btn-primary">Clear</button>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-2 offset-8">
+                    <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+                </div>
+            </div>
+            <div class="row" *ngIf="submitted">
+                <div class="col-2 offset-8">
+                    <button class="btn btn-primary" (click)="onNext()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
