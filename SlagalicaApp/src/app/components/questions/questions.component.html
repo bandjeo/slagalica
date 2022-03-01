@@ -1,1 +1,41 @@
-<p>questions works!</p>
+<div class="row">
+  <div class="col">
+    <div class="questions-container" *ngIf="question">
+      <div class="row">
+        <p class="col-4 offset-4">{{question.text}}</p>
+      </div>
+      <div class="row">
+        <button class="btn btn-outline-secondary col-2 offset-4" [disabled]="answered"
+                [ngClass]="{'green' : isRight(question.answer1), 'red': isWrong(question.answer1)}"
+                (click)="onAnswerClicked()">
+          {{question.answer1}}
+        </button>
+        <button class="btn btn-outline-secondary col-2" (click)="onAnswerClicked()"
+                [ngClass]="{'green' : isRight(question.answer2), 'red': isWrong(question.answer2)}"
+                [disabled]="answered">
+          {{question.answer2}}
+        </button>
+      </div>
+
+      <div class="row">
+        <button class="btn btn-outline-secondary col-2 offset-4" [disabled]="answered"
+                [ngClass]="{'green' : isRight(question.answer3), 'red': isWrong(question.answer3)}"
+                (click)="onAnswerClicked()">
+          {{question.answer3}}
+        </button>
+        <button class="btn btn-outline-secondary col-2" [disabled]="answered"
+                [ngClass]="{'green' : isRight(question.answer4), 'red': isWrong(question.answer4)}"
+                (click)="onAnswerClicked()">
+          {{question.answer4}}
+        </button>
+
+      </div>
+
+      <div class="row">
+        <div class="col-3 offset-9">
+          <button class="btn btn-primary" (click)="onNextClicked()">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
