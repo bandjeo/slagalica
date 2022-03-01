@@ -45,6 +45,40 @@ export class GamesService {
     }
   ]
 
+  associations = [
+    {
+      column1: {
+        a: 'a',
+        b: 'b',
+        c: 'c',
+        d: 'd',
+        solution: 'e'
+      },
+      column2: {
+        a: 'a',
+        b: 'b',
+        c: 'c',
+        d: 'd',
+        solution: 'e'
+      },
+      column3: {
+        a: 'a',
+        b: 'b',
+        c: 'c',
+        d: 'd',
+        solution: 'e'
+      },
+      column4: {
+        a: 'a',
+        b: 'b',
+        c: 'c',
+        d: 'd',
+        solution: 'e'
+      },
+      finalSolution: 'f'
+    }
+  ]
+
 
 
 
