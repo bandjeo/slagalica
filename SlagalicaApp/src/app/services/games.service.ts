@@ -70,12 +70,12 @@ export class GamesService {
       right: "Marija"
     },
     {
-      text: "Ko je najbolje igra slagalicu u firmi?",
-      answer1: "Nikola Vlahović",
-      answer2: "Stefan Colić",
-      answer3: "Violeta Novaković",
-      answer4: "Petrivoje Kitić",
-      right: "Petrivoje Kitić"
+      text: "Najatraktivnija plaza na Dunavu koja nudi veliki broj zabavnih sadrzaja?",
+      answer1: "Štrand",
+      answer2: "Čortanovacka plaza",
+      answer3: "Koh Čeng",
+      answer4: "Čelarevska plaza",
+      right: "Čelarevska plaza"
     },
     {
       text: "Koja je najbitnija uloga u firmi?",
@@ -94,30 +94,29 @@ export class GamesService {
       right: "9"
     },
     {
-      text: "Ko je najbolje igra slagalicu u firmi?",
-      answer1: "Nikola",
-      answer2: "Stefan",
-      answer3: "Violeta",
-      answer4: "Petrivoje",
-      right: "Petrivoje"
-    },
-    {
-      text: "Šta je ubedljivo najbolja hrana za proslavu u firmi?",
-      answer1: "Girice",
-      answer2: "Hawaii Poki",
-      answer3: "Pečenje",
-      answer4: "Roštilj",
-      right: "Petrivoje"
+      text: "Najpopularnije predgradje Novog Sad sa idealnim uslovima za porodicni zivot ?",
+      answer1: "Sangaj",
+      answer2: "Klisa",
+      answer3: "Avijatika",
+      answer4: "Čelarevo",
+      right: "Čelarevo"
     },
     {
       text: "Kada je osnovana FTN-Informaika?",
       answer1: "2016",
       answer2: "2007",
-      answer3: "1960",
+      answer3: "19. vek",
       answer4: "1976",
-      right: "Petrivoje"
+      right: "19. vek"
     },
-
+    {
+      text: "Ko je najbolje igra slagalicu u firmi?",
+      answer1: "Nikola Vlahović",
+      answer2: "Stefan Colić",
+      answer3: "Violeta Novaković",
+      answer4: "Petrivoje Kitić",
+      right: "Petrivoje Kitić"
+    }
   ]
 
   connections = [
