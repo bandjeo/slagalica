@@ -45,6 +45,7 @@ export class GamesService {
     }
   ]
 
+
   associations = [
     {
       column1: {

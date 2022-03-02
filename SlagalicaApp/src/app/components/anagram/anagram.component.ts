@@ -34,7 +34,7 @@ export class AnagramComponent implements OnInit {
   }
 
   deleteClicked() {
-    this.text = this.text.substring(0, this.text.length-2);
+    this.text = this.text.substring(0, this.text.length-1);
     const index = this.positions.pop() || 0;
     this.buttonsChecked[index] = false;
   }

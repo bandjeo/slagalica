@@ -1,1 +1,50 @@
-<p>symbols works!</p>
+<div class="symbols-container">
+    <div class="row">
+        <div class="col-4">
+            <div class="row" *ngFor="let i of verticalArray">
+                <div class="col-3 offset-8">
+                    <img [src]="'assets/images/' + symbolMap[i]" width="100%" (click)="symbolClicked(i)">
+                </div>
+            </div>
+                
+        </div>
+        <div class="col-4">
+            <div class="row" *ngFor="let combo of comboHistory">
+                <div class="col-3" *ngFor="let symbol of combo">
+                    <img [src]="'assets/images/' + symbolMap[symbol]" width="100%">
+                </div>
+            </div>
+            <div class="row" *ngIf="!done">
+                <div class="col-3" *ngFor="let symbol of currentCombo, let i = index">
+                    <img *ngIf="symbol > -1" [src]="'assets/images/' + symbolMap[symbol]" width="100%" (click)="removeSymbol(i)">
+                </div>
+                <div class="col-2 offset-10">
+                    <button class="btn btn-primary mt-2" (click)="submitCombo()" *ngIf="ready">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row" *ngFor="let correctenss of correctnessHistory">
+                <div class="col-3" *ngFor="let elem of correctenss">
+                    <img *ngIf="elem" src="assets/images/red-circle.png" width="100%">
+                    <img *ngIf="!elem" src="assets/images/yellow-circle.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 offset-4">
+
+            <div class="row" *ngIf="done">
+                <div class="col-3" *ngFor="let symbol of goal, let i = index">
+                    <img *ngIf="symbol > -1" [src]="'assets/images/' + symbolMap[symbol]" width="100%" (click)="removeSymbol(i)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="done">
+        <div class="col-2 offset-5">
+            <button class="btn btn-primary mt-5" (click)="nextClicked()">Next</button>
+        </div>
+    </div>
+</div>
