@@ -9,15 +9,19 @@ export class GamesService {
 
   public anagrams =  [
     {
-      letters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'],
-      solution: 'abcd'
+      letters: ['t', 'n', 'c', 'a', 'l', 'd', 'a', 'h', 'i', 'j', 'm', 'a'],
+      solution: 'dalmatinac'
+    },
+    {
+      letters: ['r', 'k', 'r', 'a', 'l', 's', 'a', 'e', 'ž', 't', 'm', 'e'],
+      solution: 'sekretar'
     }
   ]
 
   numbers = [
     {
-      numbers: [1, 2, 3, 4, 10, 20],
-      goal: 40
+      numbers: [0, 2, 0, 3, 19, 76],
+      goal: 48
     }
   ]
 
@@ -26,6 +30,9 @@ export class GamesService {
   symbols = [
     {
       goal: [0, 0, 0, 0]
+    },
+    {
+      goal: [3, 0, 3, 5]
     }
   ]
 
@@ -49,35 +56,66 @@ export class GamesService {
   associations = [
     {
       column1: {
-        a: 'a',
-        b: 'b',
-        c: 'c',
-        d: 'd',
-        solution: 'e'
+        a: 'kvadrat',
+        b: 'zgrada',
+        c: 'grad',
+        d: 'sprat',
+        solution: 'stan'
       },
       column2: {
-        a: 'a',
-        b: 'b',
-        c: 'c',
-        d: 'd',
-        solution: 'e'
+        a: 'apostol',
+        b: 'jevanđelje',
+        c: 'BG',
+        d: 'mladost',
+        solution: 'Luka'
       },
       column3: {
-        a: 'a',
-        b: 'b',
-        c: 'c',
-        d: 'd',
-        solution: 'e'
+        a: 'gojenje',
+        b: 'menadžer',
+        c: 'Abramović',
+        d: 'programerka',
+        solution: 'Marina'
       },
       column4: {
-        a: 'a',
-        b: 'b',
-        c: 'c',
-        d: 'd',
-        solution: 'e'
+        a: 'riba',
+        b: 'Futog',
+        c: 'tezga',
+        d: 'papuče',
+        solution: 'pijaca'
       },
-      finalSolution: 'f'
-    }
+      finalSolution: 'Liman'
+    },
+    {
+      column1: {
+        a: 'radno vreme',
+        b: 'čaša',
+        c: 'belo',
+        d: 'sila',
+        solution: 'vino'
+      },
+      column2: {
+        a: 'organizacija',
+        b: 'marina',
+        c: 'zabava',
+        d: 'zajednica',
+        solution: 'komjuniti menadžer'
+      },
+      column3: {
+        a: 'Ćib',
+        b: 'zdravko',
+        c: 'pivara',
+        d: 'Bačka Palanka',
+        solution: 'čelarevo'
+      },
+      column4: {
+        a: 'vojni',
+        b: 'javni prevoz',
+        c: 'aleksandar vučić',
+        d: 'osiguranje',
+        solution: 'penzioner'
+      },
+      finalSolution: 'Nikola Vlahovic'
+    },
   ]
 
 
