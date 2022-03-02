@@ -4,13 +4,19 @@
       <div class="row">
         <p class="col-4 offset-4" style="margin-top: 6rem">{{question}}</p>
       </div>
-      <div class="row" *ngFor="let i of [0,1,2,3,4]">
+      <div class="row" *ngFor="let i of [0,1,2,3,4,5,6,7]">
         <button class="btn btn-outline-secondary col-2 offset-4"
-                (click)="onAnswerClicked()">
-          {{column1[i]}}
+                [style.background-color]="column1[i].background"
+                [style.color]="column1[i].color"
+                [disabled]="column1[i].disabled || toGuess"
+                (click)="onLeftClicked(column1[i])">
+          {{column1[i].name}}
         </button>
-        <button class="btn btn-outline-secondary col-2" (click)="onAnswerClicked()">
-          {{column2[i]}}
+        <button class="btn btn-outline-secondary col-2" (click)="onRightClicked(column2[i])"
+                [style.background-color]="column2[i].background"
+                [disabled]="column2[i].disabled || !toGuess"
+                [style.color]="column2[i].color">
+          {{column2[i].car}}
         </button>
       </div>
 
