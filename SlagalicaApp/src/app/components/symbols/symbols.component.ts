@@ -117,6 +117,7 @@ export class SymbolsComponent implements OnInit {
       this.comboHistory = [];
       this.correctnessHistory = [];
       this.currentCombo = [-1, -1, -1, -1]
+      this.done = false;
     }
   }
 
