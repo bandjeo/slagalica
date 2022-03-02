@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
+import {GamesService} from "../../services/games.service";
 
 @Component({
   selector: 'app-connections',
@@ -15,26 +16,24 @@ export class ConnectionsComponent implements OnInit {
   right: any;
 
   toGuess = false;
+  done = false;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private games: GamesService) {
   }
 
   ngOnInit(): void {
-    this.setData();
+    this.question = this.games.connections.question;
+    this.column1 = this.games.connections.column1;
+    this.column2 = this.games.connections.column2;
   }
 
   onNextClicked() {
-    this.router.navigate(['/associations'])
-
+    if (this.left == this.column1[this.column1.size - 1]) {
+      this.router.navigate(['/associations'])
+    }
   }
 
   onLeftClicked(column1Element: any) {
-    if (this.left == column1Element) {
-      this.left.background = 'white'
-      this.left.color = 'grey'
-      this.right.background = 'white'
-      this.right.color = 'grey'
-    }
     this.left = column1Element;
     this.left.background = 'darkgrey'
     this.left.color = 'white'
@@ -45,111 +44,20 @@ export class ConnectionsComponent implements OnInit {
     this.left.disabled = true;
     this.toGuess = false;
     if (this.left.id == column2Element.id) {
-      column2Element.background = 'green';
-      column2Element.color = 'white'
-      column2Element.disabled = true
-      this.left.background = 'green'
-      this.left.color = 'white'
+      this.setFinalPairColor(column2Element, 'green')
     } else {
-      column2Element.background = 'red';
-      column2Element.color = 'white'
-      column2Element.disabled = true
-      this.left.background = 'red'
-      this.left.color = 'white'
+      this.setFinalPairColor(column2Element, 'red')
     }
-
+    if (this.left == this.column1[this.column1.size - 1]) {
+      this.done = true;
+    }
   }
 
-  private setData() {
-    this.question = "Povežite vlasnike sa modeli automobila"
-    this.column1 = [
-      {
-        id: 1,
-        name: 'Violeta',
-        background: 'white',
-        color: 'grey'
-      },
-      {
-        id: 2,
-        name: 'Luka',
-        background: 'white',
-        color: 'grey'
-      },
-      {
-        id: 3,
-        name: 'Marija',
-        background: 'white',
-        color: 'grey'
-      },
-
-      {
-        id: 4,
-        name: 'Tamara',
-        background: 'white',
-        color: 'grey'
-      },
-
-      {
-        id: 5,
-        name: 'Pera',
-        background: 'white',
-        color: 'grey'
-      },
-
-      {
-        id: 6,
-        name: 'Danijela',
-        background: 'white',
-        color: 'grey'
-      },
-
-      {
-        id: 7,
-        name: 'Branko',
-        background: 'white',
-        color: 'grey'
-      },
-      {
-        id: 8,
-        name: 'Žega',
-        background: 'white',
-        color: 'grey'
-      }
-    ]
-
-    this.column2 = [
-      {
-        id: 3,
-        car: 'A 170'
-      },
-      {
-        id: 6,
-        car: 'Astra K'
-      },
-      {
-        id: 1,
-        car: 'Swift'
-      },
-      {
-        id: 7,
-        car: 'CX5'
-      },
-      {
-        id: 5,
-        car: 'Golf'
-      },
-      {
-        id: 2,
-        car: 'A3'
-      },
-      {
-        id: 4,
-        car: 'X1'
-      },
-      {
-        id: 8,
-        car: 'Punto'
-      }
-    ]
+  setFinalPairColor(right: any, color: string): void {
+    right.background = color
+    right.color = 'white'
+    right.disabled = true
+    this.left.background = color
+    this.left.color = 'white'
   }
 }

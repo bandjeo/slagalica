@@ -119,14 +119,97 @@ export class GamesService {
     }
   ]
 
-  connections = [
-    {
-      column1: [],
-      column2: [],
+  connections = {
+    question: "Povežite vlasnike sa modelima automobila",
+    column1: [
+      {
+        id: 1,
+        name: 'Violeta',
+        background: 'white',
+        color: 'grey'
+      },
+      {
+        id: 2,
+        name: 'Luka',
+        background: 'white',
+        color: 'grey'
+      },
+      {
+        id: 3,
+        name: 'Marija',
+        background: 'white',
+        color: 'grey'
+      },
 
-    }
-  ]
+      {
+        id: 4,
+        name: 'Tamara',
+        background: 'white',
+        color: 'grey'
+      },
 
+      {
+        id: 5,
+        name: 'Pera',
+        background: 'white',
+        color: 'grey'
+      },
+
+      {
+        id: 6,
+        name: 'Danijela',
+        background: 'white',
+        color: 'grey'
+      },
+
+      {
+        id: 7,
+        name: 'Branko',
+        background: 'white',
+        color: 'grey'
+      },
+      {
+        id: 8,
+        name: 'Žega',
+        background: 'white',
+        color: 'grey'
+      }
+    ],
+    column2: [
+      {
+        id: 3,
+        name: 'A 170'
+      },
+      {
+        id: 6,
+        name: 'Astra K'
+      },
+      {
+        id: 1,
+        name: 'Swift'
+      },
+      {
+        id: 7,
+        name: 'CX5'
+      },
+      {
+        id: 5,
+        name: 'Golf'
+      },
+      {
+        id: 2,
+        name: 'A3'
+      },
+      {
+        id: 4,
+        name: 'X1'
+      },
+      {
+        id: 8,
+        name: 'Punto'
+      }
+    ]
+  }
 
   associations = [
     {
