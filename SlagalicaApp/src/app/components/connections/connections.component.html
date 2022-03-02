@@ -1,1 +1,24 @@
-<p>connections works!</p>
+<div class="row">
+  <div class="col">
+    <div class="questions-container">
+      <div class="row">
+        <p class="col-4 offset-4" style="margin-top: 6rem">{{question}}</p>
+      </div>
+      <div class="row" *ngFor="let i of [0,1,2,3,4]">
+        <button class="btn btn-outline-secondary col-2 offset-4"
+                (click)="onAnswerClicked()">
+          {{column1[i]}}
+        </button>
+        <button class="btn btn-outline-secondary col-2" (click)="onAnswerClicked()">
+          {{column2[i]}}
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="col-3 offset-9">
+          <button class="btn btn-primary" (click)="onNextClicked()">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

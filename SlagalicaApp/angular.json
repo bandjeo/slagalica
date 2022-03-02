@@ -103,5 +103,8 @@
       }
     }
   },
-  "defaultProject": "SlagalicaApp"
+  "defaultProject": "SlagalicaApp",
+  "cli": {
+    "analytics": false
+  }
 }

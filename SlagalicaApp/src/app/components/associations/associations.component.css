@@ -1,4 +1,8 @@
 .assoc-container {
-    margin-top: 20vh;
-    justify-content: center;
+  margin-top: 20vh;
+  justify-content: center;
+}
+
+button, input {
+  margin-top: 10px;
 }

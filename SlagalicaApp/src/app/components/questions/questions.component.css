@@ -1,0 +1,26 @@
+.questions-container {
+  margin-top: 20vh;
+  justify-content: center;
+}
+
+button {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+p {
+  padding: 50px;
+  border: 2px solid #707070;
+}
+
+.green {
+  background-color: green;
+  border-color: green;
+  color: white;
+}
+
+.red {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
