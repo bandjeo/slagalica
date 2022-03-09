@@ -9,168 +9,168 @@ export class GamesService {
 
   public anagrams =  [
     {
-      letters: ['t', 'n', 'c', 'a', 'l', 'd', 'a', 'h', 'i', 'j', 'm', 'a'],
-      solution: 'dalmatinac'
+      letters: ['e', 'o', 'n', 'k', 't', 'n', 'a', 'a', 'm', 'j', 'p', 'o'],
+      solution: 'komponenta'
     },
     {
-      letters: ['r', 'k', 'r', 'a', 'l', 's', 'a', 'e', 'ž', 't', 'm', 'e'],
-      solution: 'sekretar'
+      letters: ['v', 'b', 'r', 'a', 'o', 'l', 'r', 'e', 'z', 't', 'b', 'a'],
+      solution: 'obzervabla'
     }
   ]
 
   numbers = [
     {
-      numbers: [0, 2, 0, 3, 19, 76],
-      goal: 48
+      numbers: [8, 1, 2, 2, 13, 16],
+      goal: 132
     }
   ]
 
-  symbolMap = ['nikola', 'tref', 'pik', 'herc', 'karo', 'zvezda']
+  symbolMap = ['bane', 'tref', 'pik', 'herc', 'karo', 'zvezda']
 
   symbols = [
     {
-      goal: [0, 0, 0, 0]
+      goal: [1, 4, 2, 0]
     },
     {
-      goal: [3, 0, 3, 5]
+      goal: [5, 1, 0, 3]
     }
   ]
 
   questions = [
     {
-      text: "Sta se četvrtkom jede u firmi?",
-      answer1: "Roštilj",
-      answer2: "Girice",
-      answer3: "Pečenje",
-      answer4: "Sarma",
-      right: "Girice"
+      text: "U toku životnig ciklusa komponente, koliko puta se poziva ngOnInit?",
+      answer1: "2",
+      answer2: "Na svaku promenu",
+      answer3: "0",
+      answer4: "1",
+      right: "1"
     },
     {
-      text: "Ko pobedjuje u ratu izmedju Ukrajine i Rusije?",
-      answer1: "Ukrajina",
-      answer2: "Rusija",
-      answer3: "Kina",
-      answer4: "Srbija",
-      right: "Kina"
+      text: "Koja anotacija se nalazi iznad servisa generisanog pomoću ng g service?",
+      answer1: "@Service",
+      answer2: "@Component",
+      answer3: "@Output",
+      answer4: "@Injectable",
+      right: "@Injectable"
     },
     {
-      text: "Koji je najjači deo grada?",
-      answer1: "Liman",
-      answer2: "Podbara",
-      answer3: "Grbavica",
-      answer4: "Klisa",
-      right: "Liman"
+      text: "URL na kom se pristupa nekom enitetu drugačije se naziva...",
+      answer1: "Endpoint",
+      answer2: "Server",
+      answer3: "REST",
+      answer4: "API",
+      right: "Endpoint"
     },
     {
-      text: "Ko se vozi biznis klasom?",
-      answer1: "Stefan",
-      answer2: "Stefanija",
-      answer3: "Marija",
-      answer4: "Bane",
-      right: "Marija"
+      text: "Šta od navedenog nije ugrađena Angular direktiva?",
+      answer1: "*ngFor",
+      answer2: "routerLink",
+      answer3: "ngModel",
+      answer4: "*ngIf",
+      right: "routerLink"
     },
     {
-      text: "Najatraktivnija plaza na Dunavu koja nudi veliki broj zabavnih sadrzaja?",
-      answer1: "Štrand",
-      answer2: "Čortanovacka plaza",
-      answer3: "Koh Čeng",
-      answer4: "Čelarevska plaza",
-      right: "Čelarevska plaza"
+      text: "Kako bi sačekao odgovor na HTTP zahtev, HttpClient koristi...",
+      answer1: "Observable",
+      answer2: "map",
+      answer3: "Servis",
+      answer4: "pipe",
+      right: "Observable"
     },
     {
-      text: "Koja je najbitnija uloga u firmi?",
-      answer1: "Šef",
-      answer2: "Sekretarica",
-      answer3: "Programer",
-      answer4: "Menadžer",
-      right: "Sekretarica"
+      text: "Za šta se koristi @Output?",
+      answer1: "Komunikacija roditelj-dete",
+      answer2: "Reakcija na događaj",
+      answer3: "Komunikacija dete-roditelj",
+      answer4: "Injekcija",
+      right: "Komunikacija dete-roditelj"
     },
     {
-      text: "Koliko ukupno parking mesta postoji u dvorištu FTN-Informatike?",
-      answer1: "9",
-      answer2: "29",
-      answer3: "30",
-      answer4: "0",
-      right: "9"
+      text: "Kog tipa je ActivatedRoute.params?",
+      answer1: "any",
+      answer2: "Observable<Params>",
+      answer3: "Params",
+      answer4: "subscribe",
+      right: "Observable<Params>"
     },
     {
-      text: "Najpopularnije predgradje Novog Sad sa idealnim uslovima za porodicni zivot ?",
-      answer1: "Sangaj",
-      answer2: "Klisa",
-      answer3: "Avijatika",
-      answer4: "Čelarevo",
-      right: "Čelarevo"
+      text: "Šta kao parametar prima funkcija subscribe?",
+      answer1: "podatke",
+      answer2: "funkciju",
+      answer3: "objekat tipa any",
+      answer4: "model",
+      right: "funkciju"
     },
     {
-      text: "Kada je osnovana FTN-Informaika?",
-      answer1: "2016",
-      answer2: "2007",
-      answer3: "19. vek",
-      answer4: "1976",
-      right: "19. vek"
+      text: "Po RESTu, koja HTTP metoda se koristi za update?",
+      answer1: "PUT",
+      answer2: "POST",
+      answer3: "GET",
+      answer4: "DELETE",
+      right: "PUT"
     },
     {
-      text: "Ko je najbolje igra slagalicu u firmi?",
-      answer1: "Nikola Vlahović",
-      answer2: "Stefan Colić",
-      answer3: "Violeta Novaković",
-      answer4: "Petrivoje Kitić",
-      right: "Petrivoje Kitić"
+      text: "Ša vrši mapiranje putanje rute na komponentu?",
+      answer1: "router-outlet",
+      answer2: "routerLink",
+      answer3: "Objekat rute",
+      answer4: "ActivatedRoute",
+      right: "Objekat rute"
     }
   ]
 
   connections = {
-    question: "Povežite vlasnike sa modelima automobila",
+    question: "Povežite koncepte sa elementima njihove implementacije",
     column1: [
       {
         id: 1,
-        name: 'Violeta',
+        name: 'Komunikacija roditelj-dete',
         background: 'white',
         color: 'grey'
       },
       {
         id: 2,
-        name: 'Luka',
+        name: 'Rutiranje',
         background: 'white',
         color: 'grey'
       },
       {
         id: 3,
-        name: 'Marija',
+        name: 'Uslovni prikaz html elementa',
         background: 'white',
         color: 'grey'
       },
 
       {
         id: 4,
-        name: 'Tamara',
+        name: 'Dvosmerna veza',
         background: 'white',
         color: 'grey'
       },
 
       {
         id: 5,
-        name: 'Pera',
+        name: 'Komunikacija dete-roditelj',
         background: 'white',
         color: 'grey'
       },
 
       {
         id: 6,
-        name: 'Danijela',
+        name: 'Slanje HTTP zahteva',
         background: 'white',
         color: 'grey'
       },
 
       {
         id: 7,
-        name: 'Branko',
+        name: 'Interpolacija',
         background: 'white',
         color: 'grey'
       },
       {
         id: 8,
-        name: 'Žega',
+        name: 'Query parametri',
         background: 'white',
         color: 'grey'
       }
@@ -178,35 +178,35 @@ export class GamesService {
     column2: [
       {
         id: 3,
-        name: 'A 170'
+        name: '*ngIf'
       },
       {
         id: 6,
-        name: 'Astra K'
+        name: 'HttpClientModule'
       },
       {
         id: 1,
-        name: 'Swift'
+        name: '@Input'
       },
       {
         id: 7,
-        name: 'CX5'
+        name: '{{}}'
       },
       {
         id: 5,
-        name: 'Golf'
+        name: '@Output'
       },
       {
         id: 2,
-        name: 'A3'
+        name: '<router-outlet>'
       },
       {
         id: 4,
-        name: 'X1'
+        name: 'ngModel'
       },
       {
         id: 8,
-        name: 'Punto'
+        name: 'HttpParams'
       }
     ]
   }
@@ -214,65 +214,65 @@ export class GamesService {
   associations = [
     {
       column1: {
-        a: 'kvadrat',
-        b: 'zgrada',
-        c: 'grad',
-        d: 'sprat',
-        solution: 'stan'
+        a: 'parametar',
+        b: '[routerLink]',
+        c: 'putanja',
+        d: 'ActivatedRoute',
+        solution: 'Rutiranje'
       },
       column2: {
-        a: 'apostol',
-        b: 'jevanđelje',
-        c: 'BG',
-        d: 'mladost',
-        solution: 'Luka'
+        a: 'Modal',
+        b: 'biblioteka',
+        c: 'komponenta',
+        d: 'ng add',
+        solution: 'NgBootstrap'
       },
       column3: {
-        a: 'gojenje',
-        b: 'menadžer',
-        c: 'Abramović',
-        d: 'programerka',
-        solution: 'Marina'
+        a: 'input',
+        b: 'submit',
+        c: 'ngModel',
+        d: 'popunjavanje',
+        solution: 'Forma'
       },
       column4: {
-        a: 'riba',
-        b: 'Futog',
-        c: 'tezga',
-        d: 'papuče',
-        solution: 'pijaca'
+        a: 'zahtev',
+        b: 'protokol',
+        c: 'query parametri',
+        d: 'metoda',
+        solution: 'Http'
       },
-      finalSolution: 'Liman'
+      finalSolution: 'Moduo'
     },
     {
       column1: {
-        a: 'radno vreme',
-        b: 'čaša',
-        c: 'belo',
-        d: 'sila',
-        solution: 'vino'
+        a: 'tag',
+        b: 'atribut',
+        c: 'interpolacija',
+        d: 'element',
+        solution: 'html'
       },
       column2: {
-        a: 'organizacija',
-        b: 'marina',
-        c: 'zabava',
-        d: 'zajednica',
-        solution: 'komjuniti menadžer'
+        a: 'stil',
+        b: 'klasa',
+        c: 'id',
+        d: 'nasledjivanje',
+        solution: 'css'
       },
       column3: {
-        a: 'Ćib',
-        b: 'zdravko',
-        c: 'pivara',
-        d: 'Bačka Palanka',
-        solution: 'čelarevo'
+        a: 'roditelj-dete',
+        b: 'klijent-server',
+        c: 'servis',
+        d: 'dete-roditelj',
+        solution: 'komunikacija'
       },
       column4: {
-        a: 'vojni',
-        b: 'javni prevoz',
-        c: 'aleksandar vučić',
-        d: 'osiguranje',
-        solution: 'penzioner'
+        a: 'klasa',
+        b: 'kod',
+        c: 'tip',
+        d: 'programski jezik',
+        solution: 'typescript'
       },
-      finalSolution: 'Nikola Vlahovic'
+      finalSolution: 'Komponenta'
     },
   ]
 

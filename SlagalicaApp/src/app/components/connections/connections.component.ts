@@ -17,6 +17,7 @@ export class ConnectionsComponent implements OnInit {
 
   toGuess = false;
   done = false;
+  toDo = 8;
 
   constructor(private router: Router, private games: GamesService) {
   }
@@ -28,9 +29,7 @@ export class ConnectionsComponent implements OnInit {
   }
 
   onNextClicked() {
-    if (this.left == this.column1[this.column1.size - 1]) {
-      this.router.navigate(['/associations'])
-    }
+    this.router.navigate(['/associations'])
   }
 
   onLeftClicked(column1Element: any) {
@@ -48,7 +47,8 @@ export class ConnectionsComponent implements OnInit {
     } else {
       this.setFinalPairColor(column2Element, 'red')
     }
-    if (this.left == this.column1[this.column1.size - 1]) {
+    this.toDo -= 1
+    if (this.toDo <= 0) {
       this.done = true;
     }
   }

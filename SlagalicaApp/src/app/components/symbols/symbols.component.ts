@@ -22,7 +22,7 @@ export class SymbolsComponent implements OnInit {
 
   currentSymbols = 0;
   symbolMap:any = {
-    "0": 'nikola-vlahovic.png',
+    "0": 'bane.png',
     "1": 'tref.png',
     "2": 'pik.png',
     "3": 'herc.png',
