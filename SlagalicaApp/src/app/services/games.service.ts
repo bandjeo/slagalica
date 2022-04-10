@@ -9,19 +9,19 @@ export class GamesService {
 
   public anagrams =  [
     {
-      letters: ['t', 'n', 'c', 'a', 'l', 'd', 'a', 'h', 'i', 'j', 'm', 'a'],
-      solution: 'dalmatinac'
+      letters: ['a', 't', 'c', 'a', 'u', 'd', 't', 's', 'i', 'i', 'n', 'č'],
+      solution: 'autističan'
     },
     {
       letters: ['r', 'k', 'r', 'a', 'l', 's', 'a', 'e', 'ž', 't', 'm', 'e'],
-      solution: 'sekretar'
+      solution: 'hellyebrotha'
     }
   ]
 
   numbers = [
     {
-      numbers: [0, 2, 0, 3, 19, 76],
-      goal: 48
+      numbers: [1, 3, 3, 7, 24, 69],
+      goal: 420
     }
   ]
 
@@ -38,241 +38,335 @@ export class GamesService {
 
   questions = [
     {
-      text: "Sta se četvrtkom jede u firmi?",
-      answer1: "Roštilj",
-      answer2: "Girice",
-      answer3: "Pečenje",
-      answer4: "Sarma",
-      right: "Girice"
+      text: "Koji je objektivno najbolji sir?",
+      answer1: "Ementaler",
+      answer2: "Mocarela",
+      answer3: "Gorgonzola",
+      answer4: "Trapist",
+      right: "Trapist"
     },
     {
-      text: "Ko pobedjuje u ratu izmedju Ukrajine i Rusije?",
-      answer1: "Ukrajina",
-      answer2: "Rusija",
-      answer3: "Kina",
-      answer4: "Srbija",
-      right: "Kina"
+      text: "Šta je Filip?",
+      answer1: "Filip",
+      answer2: "Mađar",
+      answer3: "Cigam",
+      answer4: "Dobar prijatelj",
+      right: "Mađar"
     },
     {
-      text: "Koji je najjači deo grada?",
-      answer1: "Liman",
-      answer2: "Podbara",
-      answer3: "Grbavica",
-      answer4: "Klisa",
-      right: "Liman"
+      text: "Koji je od ponuđenih odgovora u skladu sa srpskim pravopisom?",
+      answer1: "Doćiću",
+      answer2: "Jeli",
+      answer3: "Neznam",
+      answer4: "Ni sam",
+      right: "Jeli"
     },
     {
-      text: "Ko se vozi biznis klasom?",
-      answer1: "Stefan",
-      answer2: "Stefanija",
-      answer3: "Marija",
-      answer4: "Bane",
-      right: "Marija"
+      text: "Koje je objektivno najbolje mesto za jelo?",
+      answer1: 'Picerija "Ciao"',
+      answer2: "Za računarom",
+      answer3: "Kod roditelja",
+      answer4: "U trpezariji",
+      right: "Kod roditelja"
     },
     {
-      text: "Najatraktivnija plaza na Dunavu koja nudi veliki broj zabavnih sadrzaja?",
-      answer1: "Štrand",
-      answer2: "Čortanovacka plaza",
-      answer3: "Koh Čeng",
-      answer4: "Čelarevska plaza",
-      right: "Čelarevska plaza"
+      text: "Ko?",
+      answer1: "Le",
+      answer2: "Sovo",
+      answer3: "BaFi",
+      answer4: "Filip",
+      right: "BaFi"
     },
     {
-      text: "Koja je najbitnija uloga u firmi?",
-      answer1: "Šef",
-      answer2: "Sekretarica",
-      answer3: "Programer",
-      answer4: "Menadžer",
-      right: "Sekretarica"
+      text: "Da je Filip Biro životinju, koju životinju bi Filip Biro?",
+      answer1: "Pag",
+      answer2: "Ракун",
+      answer3: "Ptica",
+      answer4: "Pastuv",
+      right: "Ракун"
     },
     {
-      text: "Koliko ukupno parking mesta postoji u dvorištu FTN-Informatike?",
-      answer1: "9",
-      answer2: "29",
-      answer3: "30",
-      answer4: "0",
-      right: "9"
+      text: "Koja je najzabavnija društvena igra?",
+      answer1: "Yamb",
+      answer2: "Papirići",
+      answer3: "Lorum",
+      answer4: "Šah",
+      right: "Yamb"
     },
     {
-      text: "Najpopularnije predgradje Novog Sad sa idealnim uslovima za porodicni zivot ?",
-      answer1: "Sangaj",
-      answer2: "Klisa",
-      answer3: "Avijatika",
-      answer4: "Čelarevo",
-      right: "Čelarevo"
+      text: "Kome treba terapija?",
+      answer1: "Filipu, ali ne sad",
+      answer2: "Ne Filipu",
+      answer3: "Svima sem Filipu",
+      answer4: "Filipu",
+      right: "Svima sem Filipu"
     },
     {
-      text: "Kada je osnovana FTN-Informaika?",
-      answer1: "2016",
-      answer2: "2007",
-      answer3: "19. vek",
-      answer4: "1976",
-      right: "19. vek"
+      text: "Koji od ponuđenih filmova je najbojli?",
+      answer1: "Sharknado 3",
+      answer2: "The Room",
+      answer3: "Drugi Deo",
+      answer4: "After",
+      right: "Drugi Deo"
     },
     {
-      text: "Ko je najbolje igra slagalicu u firmi?",
-      answer1: "Nikola Vlahović",
-      answer2: "Stefan Colić",
-      answer3: "Violeta Novaković",
-      answer4: "Petrivoje Kitić",
-      right: "Petrivoje Kitić"
-    }
+      text: "Koji je najteži sport na svetu?",
+      answer1: "Tenis",
+      answer2: "Gimnastika",
+      answer3: "Teretana",
+      answer4: "Skvoš",
+      right: "Skvoš"
+    },
   ]
 
-  connections = {
-    question: "Povežite vlasnike sa modelima automobila",
-    column1: [
-      {
-        id: 1,
-        name: 'Violeta',
-        background: 'white',
-        color: 'grey'
-      },
-      {
-        id: 2,
-        name: 'Luka',
-        background: 'white',
-        color: 'grey'
-      },
-      {
-        id: 3,
-        name: 'Marija',
-        background: 'white',
-        color: 'grey'
-      },
+  connections = 
+  [
+    {
+      question: "Spoj imena prijatelja sa odgovarajućim rođendanima",
+      column1: [
+        {
+          id: 1,
+          name: 'Kole',
+          background: 'white',
+          color: 'grey'
+        },
+        {
+          id: 2,
+          name: 'Isidora',
+          background: 'white',
+          color: 'grey'
+        },
+        {
+          id: 3,
+          name: 'Bane',
+          background: 'white',
+          color: 'grey'
+        },
 
-      {
-        id: 4,
-        name: 'Tamara',
-        background: 'white',
-        color: 'grey'
-      },
+        {
+          id: 4,
+          name: 'Jovana',
+          background: 'white',
+          color: 'grey'
+        },
 
-      {
-        id: 5,
-        name: 'Pera',
-        background: 'white',
-        color: 'grey'
-      },
+        {
+          id: 5,
+          name: 'Pera',
+          background: 'white',
+          color: 'grey'
+        },
 
-      {
-        id: 6,
-        name: 'Danijela',
-        background: 'white',
-        color: 'grey'
-      },
+        {
+          id: 6,
+          name: 'Žare',
+          background: 'white',
+          color: 'grey'
+        },
 
-      {
-        id: 7,
-        name: 'Branko',
-        background: 'white',
-        color: 'grey'
-      },
-      {
-        id: 8,
-        name: 'Žega',
-        background: 'white',
-        color: 'grey'
-      }
-    ],
-    column2: [
-      {
-        id: 3,
-        name: 'A 170'
-      },
-      {
-        id: 6,
-        name: 'Astra K'
-      },
-      {
-        id: 1,
-        name: 'Swift'
-      },
-      {
-        id: 7,
-        name: 'CX5'
-      },
-      {
-        id: 5,
-        name: 'Golf'
-      },
-      {
-        id: 2,
-        name: 'A3'
-      },
-      {
-        id: 4,
-        name: 'X1'
-      },
-      {
-        id: 8,
-        name: 'Punto'
-      }
-    ]
-  }
+        {
+          id: 7,
+          name: 'Jelena',
+          background: 'white',
+          color: 'grey'
+        },
+        {
+          id: 8,
+          name: 'Filip',
+          background: 'white',
+          color: 'grey'
+        }
+      ],
+      column2: [
+        {
+          id: 3,
+          name: '4.6.'
+        },
+        {
+          id: 6,
+          name: '8.2.'
+        },
+        {
+          id: 1,
+          name: '9.9.'
+        },
+        {
+          id: 7,
+          name: '16.5.'
+        },
+        {
+          id: 5,
+          name: '1.2.'
+        },
+        {
+          id: 2,
+          name: '10.8.'
+        },
+        {
+          id: 4,
+          name: '16.12.'
+        },
+        {
+          id: 8,
+          name: '6.4.'
+        }
+      ]
+    },
+    {
+      question: "Spoj osobu sa brojem obuće",
+      column1: [
+        {
+          id: 1,
+          name: 'Kole', 
+          background: 'white',
+          color: 'grey'
+        },
+        {
+          id: 2,
+          name: 'Isidora',
+          background: 'white',
+          color: 'grey'
+        },
+        {
+          id: 3,
+          name: 'Bane',
+          background: 'white',
+          color: 'grey'
+        },
+
+        {
+          id: 4,
+          name: 'Jovana',
+          background: 'white',
+          color: 'grey'
+        },
+
+        {
+          id: 5,
+          name: 'Pera',
+          background: 'white',
+          color: 'grey'
+        },
+
+        {
+          id: 6,
+          name: 'Žare',
+          background: 'white',
+          color: 'grey'
+        },
+
+        {
+          id: 7,
+          name: 'Filip (levo stopalo)',
+          background: 'white',
+          color: 'grey'
+        },
+        {
+          id: 8,
+          name: 'Filip (desno stopalo)',
+          background: 'white',
+          color: 'grey'
+        }
+      ],
+      column2: [
+        {
+          id: 3,
+          name: '43'
+        },
+        {
+          id: 6,
+          name: 'Žare'
+        },
+        {
+          id: 1,
+          name: '45'
+        },
+        {
+          id: 7,
+          name: '46'
+        },
+        {
+          id: 5,
+          name: '46.5'
+        },
+        {
+          id: 2,
+          name: '38'
+        },
+        {
+          id: 4,
+          name: '39'
+        },
+        {
+          id: 8,
+          name: '47'
+        }
+      ]
+    },
+  ]
 
   associations = [
     {
       column1: {
-        a: 'kvadrat',
-        b: 'zgrada',
-        c: 'grad',
-        d: 'sprat',
-        solution: 'stan'
+        a: 'Vilijams',
+        b: 'Margo',
+        c: 'Roba u dativu',
+        d: 'Robert',
+        solution: 'Robi'
       },
       column2: {
-        a: 'apostol',
-        b: 'jevanđelje',
-        c: 'BG',
-        d: 'mladost',
-        solution: 'Luka'
+        a: 'Posao',
+        b: 'WC',
+        c: 'Sekretar/ica',
+        d: 'Stolica',
+        solution: 'Kancelarija'
       },
       column3: {
-        a: 'gojenje',
-        b: 'menadžer',
-        c: 'Abramović',
-        d: 'programerka',
-        solution: 'Marina'
+        a: 'Demokratska stranka',
+        b: 'Šah',
+        c: 'Drugi Deo',
+        d: 'Gaće',
+        solution: 'Mikloš'
       },
       column4: {
-        a: 'riba',
-        b: 'Futog',
-        c: 'tezga',
-        d: 'papuče',
-        solution: 'pijaca'
+        a: 'Ракун',
+        b: 'Skvoš',
+        c: 'Dobar prijatelj',
+        d: 'Gaymer',
+        solution: 'Filip'
       },
-      finalSolution: 'Liman'
+      finalSolution: 'Biro'
     },
     {
       column1: {
-        a: 'radno vreme',
-        b: 'čaša',
-        c: 'belo',
-        d: 'sila',
-        solution: 'vino'
+        a: 'DSM',
+        b: 'Spektar',
+        c: 'Hari Poter',
+        d: 'Mark Zakerberg',
+        solution: 'Autizam'
       },
       column2: {
-        a: 'organizacija',
-        b: 'marina',
-        c: 'zabava',
-        d: 'zajednica',
-        solution: 'komjuniti menadžer'
+        a: 'Bestie',
+        b: 'Odan',
+        c: 'Najbolji',
+        d: 'Toksičan',
+        solution: 'Prijatelj'
       },
       column3: {
-        a: 'Ćib',
-        b: 'zdravko',
-        c: 'pivara',
-        d: 'Bačka Palanka',
-        solution: 'čelarevo'
+        a: 'Standardna',
+        b: 'Nos',
+        c: 'Operacija',
+        d: 'Odstupanje',
+        solution: 'Devijacija'
       },
       column4: {
-        a: 'vojni',
-        b: 'javni prevoz',
-        c: 'aleksandar vučić',
-        d: 'osiguranje',
-        solution: 'penzioner'
+        a: 'Rođenje',
+        b: 'Dan',
+        c: 'Proslava',
+        d: '5.4.',
+        solution: 'Rođendan'
       },
-      finalSolution: 'Nikola Vlahovic'
+      finalSolution: 'Filip'
     },
   ]
 
