@@ -21,14 +21,7 @@ export class SymbolsComponent implements OnInit {
 
 
   currentSymbols = 0;
-  symbolMap:any = {
-    "0": 'nikola-vlahovic.png',
-    "1": 'tref.png',
-    "2": 'pik.png',
-    "3": 'herc.png',
-    "4": 'karo.png',
-    "5": 'star.jpeg'
-  }
+  symbolMap:any = {}
 
   done = false;
 
@@ -36,6 +29,7 @@ export class SymbolsComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
+    this.symbolMap = this.games.symbolMap;
     this.goal = this.games.symbols[0].goal;
   }
 
@@ -84,11 +78,13 @@ export class SymbolsComponent implements OnInit {
   getCorrectnes() {
     let combo = [...this.currentCombo]
     let goal = [...this.goal]
+    console.log(goal)
+    console.log(combo)
     let correctness = [];
 
     for (let i in combo) {
       if (combo[i] == goal[i]) {
-        correctness.push(true);
+        correctness.push('good');
         combo[i] = -1
         goal[i] = -1
       }
@@ -99,12 +95,16 @@ export class SymbolsComponent implements OnInit {
       for (let j in goal) {
         if(goal[j] < 0) continue
         if (combo[i] == goal[j]) {
-          correctness.push(false)
+          correctness.push('mild')
           combo[i] = -1
           goal[j] = -1
         }
       }
     }
+    while(correctness.length < 4) {
+      correctness.push('bad')
+    }
+    console.log(correctness)
     return correctness
   }
 

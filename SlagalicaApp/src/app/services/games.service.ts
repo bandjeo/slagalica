@@ -13,7 +13,7 @@ export class GamesService {
       solution: 'autističan'
     },
     {
-      letters: ['r', 'k', 'r', 'a', 'l', 's', 'a', 'e', 'ž', 't', 'm', 'e'],
+      letters: ['b', 'a', 'h', 'r', 'l', 'e', 't', 'h', 'o', 'y', 'e', 'l'],
       solution: 'hellyebrotha'
     }
   ]
@@ -25,14 +25,14 @@ export class GamesService {
     }
   ]
 
-  symbolMap = ['nikola', 'tref', 'pik', 'herc', 'karo', 'zvezda']
+  symbolMap = ['glava.jpg', 'leva_ruka.jpg', 'desna_ruka.jpg', 'tiba.jpg', 'leva_noga.jpg', 'desna_noga.jpg']
 
   symbols = [
     {
-      goal: [0, 0, 0, 0]
+      goal: [2, 0, 3, 1]
     },
     {
-      goal: [3, 0, 3, 5]
+      goal: [5, 0, 3, 4]
     }
   ]
 

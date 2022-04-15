@@ -26,8 +26,9 @@
         <div class="col-4">
             <div class="row" *ngFor="let correctenss of correctnessHistory">
                 <div class="col-3" *ngFor="let elem of correctenss">
-                    <img *ngIf="elem" src="assets/images/red-circle.png" width="100%">
-                    <img *ngIf="!elem" src="assets/images/yellow-circle.png" width="100%">
+                    <img *ngIf="elem == 'good'" src="assets/images/red-circle.png" width="100%">
+                    <img *ngIf="elem == 'mild'" src="assets/images/yellow-circle.png" width="100%">
+                    <img *ngIf="elem == 'bad'" src="assets/images/grey-circle.png" width="100%">
                 </div>
             </div>
         </div>
